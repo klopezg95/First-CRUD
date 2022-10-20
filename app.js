@@ -1,12 +1,32 @@
-function insertarNombre(){
-    let nombre = document.getElementById('nombre').value;
-    let div = document.createElement('div');
-    div.appendChild(nombre);
-    document.body.appendChild(div);
+//---------------== VARIABLES==------------------
 
-    // const buttonAgregar = document.getElementById('btn-primary')
+let nombre = document.getElementById('firstName').value;
+let apellido = document.getElementById('lastName').value;
+let apartamento = document.getElementById('Apartment').value;
+const row = document.createComment('tr');
 
-    // buttonAgregar.addEventListener('click',event=>{
-    //     insertarNombre();
-    // })
-}
+
+
+    const buttonAgregar = document.getElementById('btn-success')
+    
+    buttonAgregar.addEventListener('click',event=>{
+
+
+        row.innerHTML = `
+
+        <td>${nombre}</td>
+        <td>${apellido}</td>
+        <td>${apartamento}</td>
+        <td>
+
+            <a href="" class="btn btn-warning btn-sm edit">Edit</a>
+            <a href="" class="btn btn-danger btn-sm edit">Delete</a>
+            
+        </td>`;
+
+        
+        let lista = document.getElementById('people-list');
+        lista.appendChild(row);
+        
+        
+    })

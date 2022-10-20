@@ -3,7 +3,11 @@
     padding: 0;
     -webkit-box-sizing: border-box;
 }
-.encabezado{
+body{
+    color: white;
+    background-color: #1d2630;
+}
+/* .encabezado{
     background-color: antiquewhite;
     width: 100%;
     display: flex;
@@ -30,4 +34,5 @@
 .btn-primary{
     margin: 0 25%;
     width: 50%;
-}
+    margin-bottom: 10px;
+} */
